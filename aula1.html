@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .titulo{
+            color: green!important;
+            text-align: center;
+        }
+
+        #minha-equipa{
+            display: flex;
+            gap: 1rem;
+
+            /*justify-content: space-around;*/
+        }
+        .card{
+            flex-grow: 1;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card button.btn{
+            width: 100%;
+            padding: 1rem 0;
+            background-color: seagreen;
+            color: white;
+            font-size:1.5rem;
+            font-weight: bold;
+        }
+
+        .card button.btn:hover{
+            background-color: black;
+            /*font-size:3.5rem;*/
+        }
+
+    </style>
+</head>
+<body>
+    
+    
+    <h1 class="titulo" style="color:red">TÍTULO DO NOSSO WEBSITE</h1>
+    
+    <div style="width: 60%;margin: 1rem auto 1rem auto;">
+        <img style="width: 100%;" src="imgs/imagem3.jpg" alt="imagem da empresa">
+    </div>
+    
+
+    <h1 class="titulo">A NOSSA EQUIPA</h1>
+
+    <div id="minha-equipa">
+        <div class="card">
+            <img src="imgs/avatares/avatar6.svg" alt="foto da marai albertina">
+            <p>nome</p>
+            <button class="btn" type="button">ver perfil</button>
+        </div>
+        <div class="card">   
+            <img src="imgs/avatares/avatar7.svg" alt="foto da bernardina albertina">
+            <p>nome</p>
+            <button class="btn" type="button">ver perfil</button>
+        </div>
+        <div class="card">
+            <img src="imgs/avatares/avatar8.svg" alt="foto da marai albertina">
+            <p>nome</p>
+            <button class="btn" type="button">ver perfil</button>
+        </div>
+        <div class="card">   
+            <img src="imgs/avatares/avatar9.svg" alt="foto da bernardina albertina">
+            <p>nome</p>
+            <button class="btn" type="button">ver perfil</button>
+        </div>
+    </div>
+
+    <!-- comentarios -->
+    <span>TÍTULO DO NOSSO WEBSITE</span>
+    <span>TÍTULO DO NOSSO WEBSITE</span>
+
+</body>
+</html>
