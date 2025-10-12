@@ -21,6 +21,7 @@
             
         }
         .txt-evento{
+            display: none;
             position: absolute;
             top: 50%;
             left:50%;
@@ -34,23 +35,50 @@
 
         #galeria{
             display: flex;
-            justify-content: space-between;
-            /*gap: 3rem;*/
-            width:85%;
-            margin: 1rem auto;
+            flex-direction: column;
+            gap: 2rem;
+            width:100%;
+            margin: 0rem auto;
         }
 
         #galeria .card{
-            /*flex-grow: 1;*/
+            flex-grow: 1;
+            width:100%;
         }
 
         #galeria img{
-            width:300px;
+            width:100%;
         }
 
         #galeria button{
             width:100%
         }
+
+
+        @media(min-width: 768px){
+            #galeria{
+                flex-direction: row;
+            }
+
+            .esconder-2{
+                display: none;
+            }
+
+            .txt-evento{
+                display: block;
+            }
+        }
+
+        @media(min-width: 1200px){
+            .esconder-2{
+                display: block;
+            }
+
+            .txt-evento{
+                font-size: 4rem;
+            }
+        }
+
 
     </style>
 </head>
@@ -75,17 +103,22 @@
     <!-- LISTA DAS IMAGENS -->
     <div id="galeria">
         <div class="card">
-            <img src="https://placehold.co/450x300" alt="">
+            <img src="https://picsum.photos/600/400?grayscale" alt="">
             <p>data do evento</p>
             <button type="button">Ver + info</button>
         </div>
         <div class="card">
-            <img src="https://placehold.co/300x200" alt="">
+            <img src="https://picsum.photos/900/600?grayscale" alt="">
             <p>data do evento</p>
             <button type="button">Ver + info</button>
         </div>
-        <div class="card">
-            <img src="https://placehold.co/600x400" alt="">
+        <div class="card esconder-2">
+            <img src="imgs/imagem-teste.jpg" alt="">
+            <p>data do evento</p>
+            <button type="button">Ver + info</button>
+        </div>
+        <div class="card esconder-2">
+            <img src="https://picsum.photos/900/600?grayscale" alt="">
             <p>data do evento</p>
             <button type="button">Ver + info</button>
         </div>
