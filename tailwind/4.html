@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .evento-principal{
+            position:relative;
+            display:flex;
+            align-items: center;
+            width:85%;
+            height:500px;
+            margin:2rem auto;
+            overflow:hidden;
+        }
+        .evento-principal img{
+            width:100%;
+            /*height:100%;*/
+        }
+        .txt-evento{
+            display:none;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            padding: 2rem;
+            font-size:3rem;
+            color:ghostwhite;
+            background-color: rgba(228, 192, 236, 0.8);
+        }
+
+        #galeria{
+            display:flex;
+            flex-direction:column;
+            gap: 2rem;
+            width:85%;
+            margin:0rem auto;
+        }
+
+        #galeria .card{
+            flex-grow:1;
+            width:100%;
+        }
+
+        #galeria img{
+            width:100%;
+        }
+
+        #galeria button{
+            width:100%;
+        }
+
+
+        @media(min-width:768px){
+            #galeria{
+                flex-direction:row;
+            }
+            .esconder-2{
+                display:none;
+            }
+            .txt-evento{
+                display:block;
+            }
+        }
+
+        @media(min-width:1200px){
+            .esconder-2{
+                display:block;
+            }
+            .txt-evento{
+                font-size:4rem;
+            }
+        }
+
+
+    </style>
+</head>
+<body style="height:2000px;">
+
+    <header>
+        <nav id="menu-principal">
+            <a class="menu-item" href="index.html">Home</a>
+            <a class="menu-item" href="eventos.html">Eventos</a>
+            <a class="menu-item" href="contactos.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <!--IMAGEM COM TEXTO SOBREPOSTO-->
+    <div class="evento-principal">
+        <div class="txt-evento">29.10&nbsp; GREAT&nbsp; EVENTO</div>
+
+        <img src="https://placehold.co/600x400" alt="">
+    </div>
+
+    <!--LISTA DAS IMAGENS -->
+    <div id="galeria">
+        <div class="card">
+            <img src="https://picsum.photos/600/400?grayscale" alt="">
+            <p>data do evento</p>
+            <button type="button">Ver + info</button>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/900/600?grayscale" alt="">
+            <p>data do evento</p>
+            <button type="button">Ver + info</button>
+        </div>
+        <div class="card esconder-2">
+            <img src="https://picsum.photos/600/400?grayscale" alt="">
+            <p>data do evento</p>
+            <button type="button">Ver + info</button>
+        </div>
+        <div class="card esconder-2">
+            <img src="https://picsum.photos/300/200?grayscale" alt="">
+            <p>data do evento</p>
+            <button type="button">Ver + info</button>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
