@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .evento-principal{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 85%;
+            height: 500px;
+            margin: 2rem auto; 
+            overflow: hidden;
+        }
+        .evento-principal img{
+            width:100%;
+            /*height: 100%;;*/
+            
+        }
+        .txt-evento{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            padding:2rem;
+            font-size: 3rem;
+            color:ghostwhite;
+            background-color: rgba(0, 128, 0, .8);
+        }
+
+    </style>
+</head>
+<body style="height: 2000px;">
+
+    <header>
+        <nav id="menu-principal">
+            <a class="menu-item" href="index.html">Home</a>
+            <a class="menu-item" href="eventos.html">Eventos</a>
+            <a class="menu-item" href="contactos.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <!-- IMAGEM COM TEXTO SOBREPOSTO -->
+    <div class="evento-principal">
+        <div class="txt-evento">29.10&nbsp;GREAT&nbsp;EVENTO</div>
+        
+        <img src="imgs/imagem3.jpg" alt="">  
+          
+    </div>
+
+
+    <img style="width: 200px;height: 200px;" src="imgs/imagem3.jpg" alt="">
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

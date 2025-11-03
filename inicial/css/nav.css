@@ -1,0 +1,14 @@
+
+#menu-principal{
+    width:80%;
+    margin:0 auto;
+    /*padding: 1rem 0 0 0 ;*/
+    /*background-color: aqua;*/
+    text-align: right;
+}
+
+.menu-item{
+    display: inline-block;
+    padding: 1rem   ;
+    background-color: red;
+}
