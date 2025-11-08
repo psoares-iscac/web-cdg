@@ -7,7 +7,7 @@
 
 # LINKS ÚTEIS
 https://picsum.photos/         - gerador de fotos aleatórias <br>
-https://www.svgrepo.com/       - svgs gratuitos 
+https://www.svgrepo.com/       - svgs gratuitos <br>
 https://iconify.design/        - icones
 
 
