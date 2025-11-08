@@ -8,6 +8,7 @@
 # LINKS ÚTEIS
 https://picsum.photos/         - gerador de fotos aleatórias <br>
 https://www.svgrepo.com/       - svgs gratuitos 
+https://iconify.design/        - icones
 
 
 ## TAILWINDCSS 4.1
