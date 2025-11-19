@@ -3,8 +3,9 @@ if(isset($_GET['evento'])){
     $eventoId = $_GET['evento'];
 }else{
     header('Location:index.html');
+    exit;
 }
-
+require('includes/connection.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-pt">
@@ -23,6 +24,25 @@ $pagina = 'eventos';
 require('includes/nav.php')
 ?>
     
+<?php 
+$sql = 'SELECT * FROM eventos WHERE id = :id';
+$stmt = $dbh->prepare($sql);
+$stmt->bindValue(':id', $eventoId);
+$stmt->execute();
+
+if(!$stmt || $stmt->rowCount() != 1){
+    //echo 'erro';
+    header('Location:index.php');
+    exit;
+}
+
+$evento = $stmt->fetchObject();
+$nome   = $evento->nome;
+$data   = $evento->dataEvento;
+$imagem = $evento->imagem;
+$info   = $evento->informacao;
+?>
+
 
     <div class="text-center">
         <?php
