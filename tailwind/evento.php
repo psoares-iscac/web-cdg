@@ -106,6 +106,8 @@ $info   = $evento->informacao;
             </div>
 
         </form>
+
+        <div class="mt-4 text-right text-3xl">Inscritos: <span id="total-inscritos" data-eventoid="<?= $eventoId ?>">7</span></div>
     </div>
 </div>
 
@@ -115,6 +117,8 @@ $info   = $evento->informacao;
 
    
 
-
+<script>
+    const totalInscritos = document.getElementById('total-inscritos');
+</script>
 </body>
 </html>
