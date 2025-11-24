@@ -231,7 +231,6 @@ $info   = $evento->informacao;
         }
     }
 
-
     /* versão 6 - await fetch, method POST com FORMDATA */
     async function atualizarInscritos6() {
         const formData = new FormData();
