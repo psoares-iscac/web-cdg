@@ -3,7 +3,7 @@
 // validar dse ha $id
 require('connection.php');
 
-#evento 1~
+#evento 1
 // Lê o corpo da requisição (JSON)
 $input = file_get_contents("php://input");
 
